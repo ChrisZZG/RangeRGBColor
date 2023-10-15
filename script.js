@@ -30,13 +30,13 @@ textBlue.innerText = colorBlue;
 //Defino la funcion con los parametros que tomara para
 //actualizar el color de fondo
 function actualizarColor(colorRed, colorGreen, colorBlue) {
-    let colorRGB = `rgba(${colorRed}, ${colorGreen}, ${colorBlue}`;
+    let colorRGB = `rgb(${colorRed}, ${colorGreen}, ${colorBlue}`;
     document.body.style.backgroundColor = colorRGB;
     //Defino el color del texto como el color puro de
     //su valor y cero para los demas
-    textRed.style.color = `rgba(${colorRed}, ${0}, ${0}`;
-    textGreen.style.color = `rgba(${0}, ${colorGreen}, ${0}`;
-    textBlue.style.color = `rgba(${0}, ${0}, ${colorBlue}`;
+    textRed.style.color = `rgb(${colorRed}, ${0}, ${0}`;
+    textGreen.style.color = `rgb(${0}, ${colorGreen}, ${0}`;
+    textBlue.style.color = `rgb(${0}, ${0}, ${colorBlue}`;
 }
 
 //Escucho a cada imput para poder tomar esos valores y 
